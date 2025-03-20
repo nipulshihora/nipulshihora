@@ -126,11 +126,8 @@
             <i>nipul[at]iiti.ac.in</i>
             <br> ORCID: <a href="http://orcid.org/0000-0002-4480-388X" target="_blank">
               <i>0000-0002-4480-388X</i>
-            </a> &nbsp;&nbsp;&nbsp;&nbsp; <script>
-              document.write(" < input type = 'button'
-                " +
-                "onClick='window.print()' " + "class='printbutton' " + "value='Print'/>");
-            </script>
+            </a> &nbsp;&nbsp;&nbsp;&nbsp; 
+            
         </p>
       </div>
       <div id="objective">
@@ -322,6 +319,22 @@
         <a href="http://orcid.org/0000-0002-4480-388X" target="_blank">
           <i>ORCID</i>
         </a>
+
+<style type="text/css" media="print">
+@page { size:8.5in 11in; margin: 1cm }
+.printbutton {
+  visibility: hidden;
+  display: none;
+}
+</style>
+
+<script>
+document.write("<input type='button' " +
+"onClick='window.print()' " +
+"class='printbutton' " +
+"value='Print This Page'/>");
+</script>
+        
       </center>
     </footer>
   </body>
